@@ -1,0 +1,23 @@
+{
+  "name": "reto_01",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "front:dev": "cd reto_01 && yarn dev",
+    "back:dev": "nodemon server.js",
+    "dev": "concurrently \"yarn front:dev\" \"yarn back:dev\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
